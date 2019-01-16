@@ -1,10 +1,8 @@
----
-title: Genome Assembly Workshop - December 17 - 20, 2018
----
+# Working on the Life Sciences Super Computing v0 cluster (LSSC0)
 
 ## UC Davis Genome Center [*Bioinformatics Core*](http://bioinformatics.ucdavis.edu/)
 
-* [Introduction - Matt Settles](slides/Introduction.pdf)
+* [Introduction to the Core](markdown/intro.core/intro.core.md)
 
 * [Getting Connected](cluster-slurm/logging-in.md)
 * [Cluster intro - Matt Settles](cluster-slurm/cluster.md)
