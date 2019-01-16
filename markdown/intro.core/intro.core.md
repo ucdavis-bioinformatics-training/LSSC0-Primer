@@ -1,3 +1,3 @@
-The **mission** of the Bioinformatics Core facility is to facilitate outstanding omics- scale research through these activities:
+The **mission** of the UC Davis Bioinformatics Core facility in the Genome Center is to facilitate outstanding omics- scale research through these activities:
 
 ![mission](mission.png)
