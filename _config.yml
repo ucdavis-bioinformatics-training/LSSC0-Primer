@@ -1,1 +1,6 @@
+title: LSSC0 Primer
+logo: /assets/img/bioinformatics_core_design.png
+description: A Primer for using the Life Sciences Super Computer v0 (LSSC0) cluster.
+show_downloads: false
+google_analytics:
 theme: jekyll-theme-minimal
