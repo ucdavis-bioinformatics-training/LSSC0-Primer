@@ -14,7 +14,7 @@
 /bin/hostname
 start=`date +%s`
 
-module load blat/v.35-fastq
+module load blat
 
 echo “HELLO”
 
