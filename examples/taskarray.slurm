@@ -5,7 +5,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=20 # Number of cores
 #SBATCH --mem=64000 # Memory pool for all cores (see also --mem-per-cpu)
-#SBATCH --partition=gc128 # Partition to submit to
+#SBATCH --partition=production # Partition to submit to
 #SBATCH --output=arrayJob_%A_%a.out # File to which STDOUT will be written
 #SBATCH --error=arrayJob_%A_%a.err # File to which STDERR will be written
 #SBATCH --mail-type=END # Type of email notification- BEGIN,END,FAIL,ALL
@@ -40,7 +40,7 @@ call="STAR \
 --alignIntronMax 1000000 \
 --outSAMtype BAM SortedByCoordinate \
 --limitBAMsortRAM 60000000000 \
---quantMode TranscriptomeSAM GeneCounts" 
+--quantMode TranscriptomeSAM GeneCounts"
 echo $call
 eval $call
 

@@ -6,15 +6,12 @@ command -v sinfo >/dev/null 2>&1 || { echo >&2 "Command 'sinfo' not found! You'r
 echo "CLUSTER STATUS"
 echo "=============="
 
-scontrol show partition=gc64 | grep "PartitionName" ; scontrol show partition=gc64 | grep "TotalCPUs" | sed 's/Select.*//'
-scontrol show partition=gc128 | grep "PartitionName" ; scontrol show partition=gc128 | grep "TotalCPUs" | sed 's/Select.*//'
-scontrol show partition=gc256 | grep "PartitionName" ; scontrol show partition=gc256 | grep "TotalCPUs" | sed 's/Select.*//'
-scontrol show partition=gc512 | grep "PartitionName" ; scontrol show partition=gc512 | grep "TotalCPUs" | sed 's/Select.*//'
+scontrol show partition=production | grep "PartitionName" ; scontrol show partition=production | grep "TotalCPUs" | sed 's/Select.*//'
 
 echo "=============="
 
 sinfo -e -o "%P %.10g %.6c %.6D %.11m %.11T" | grep -i "g" | \
-sed 's/MEMORY/MEMORY, MB/' | grep -v "^gc\*" | grep -v "down" | grep -v "drained"
+sed 's/MEMORY/MEMORY, MB/' | grep -v "^production\*" | grep -v "down" | grep -v "drained"
 
 echo "=============="
 scontrol show config | head -n1
